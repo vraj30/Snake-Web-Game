@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url("/snakeGame/bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playarea {
+    background: linear-gradient(rgb(114, 200, 114),rgb(255, 255, 150));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.snake{
+    background-color: cyan;
+}
+
+.food{
+    background-color: red;
+}
+
+.snakeHead{
+    background-color:purple;
+}
+
+#score
+{
+    position: absolute;
+    top: 10px;
+    right: 200px;
+    font-size: 38px;
+    font-weight: bold;
+
+}
+#highscore
+{
+    position: absolute;
+    top: 65px;
+    right: 200px;
+    font-size: 38px;
+    font-weight: bold;
+}
